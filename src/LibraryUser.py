@@ -55,5 +55,6 @@ List comprehension or Loop')
     write_result_in_json(f"{file_name}", [user.__dict__ for user in users_list])
 
 
-distribution_of_books_by_users(users=read_users_from_json("users.json"), books=read_books_from_csv("books.csv"),
+distribution_of_books_by_users(users=read_users_from_json("users.json"),
+                               books=read_books_from_csv("books.csv", number_of_columns=4),
                                model_generator="Loop")
